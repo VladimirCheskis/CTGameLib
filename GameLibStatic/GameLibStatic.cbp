@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="GameLibStatic" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/GameLibStatic" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Debug/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-DSFML_STATIC" />
+					<Add directory="../SFML-2.3.2/include" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add library="../SFML-2.3.2/lib/libsfml-graphics-s-d.a" />
+					<Add library="../SFML-2.3.2/lib/libsfml-audio-s-d.a" />
+					<Add library="../SFML-2.3.2/lib/libsfml-window-s-d.a" />
+					<Add library="../SFML-2.3.2/lib/libsfml-network-s-d.a" />
+					<Add library="../SFML-2.3.2/lib/libsfml-system-s-d.a" />
+					<Add directory="../SFML-2.3.2/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/GameLibStatic" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Release/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="include/Common.h" />
+		<Unit filename="include/EventActions.h" />
+		<Unit filename="include/FileUtils.h" />
+		<Unit filename="include/FoldersAndPathes.h" />
+		<Unit filename="include/GameAction.h" />
+		<Unit filename="include/GameAnimators.h" />
+		<Unit filename="include/GameEventDelegate.h" />
+		<Unit filename="include/GameImage.h" />
+		<Unit filename="include/GameLib.h" />
+		<Unit filename="include/GameMessages.h" />
+		<Unit filename="include/GameObject.h" />
+		<Unit filename="include/GameScene.h" />
+		<Unit filename="include/GameSound.h" />
+		<Unit filename="include/GameSprite.h" />
+		<Unit filename="include/GameText.h" />
+		<Unit filename="include/ImageActions.h" />
+		<Unit filename="include/InitAnimationsSet.h" />
+		<Unit filename="include/MessageActions.h" />
+		<Unit filename="include/MoveActions.h" />
+		<Unit filename="include/SoundActions.h" />
+		<Unit filename="include/SpriteCollisions.h" />
+		<Unit filename="include/Test.h" />
+		<Unit filename="include/TextActions.h" />
+		<Unit filename="src/EventActions.cpp" />
+		<Unit filename="src/FileUtils.cpp" />
+		<Unit filename="src/FoldersAndPathes.cpp" />
+		<Unit filename="src/GameAction.cpp" />
+		<Unit filename="src/GameAnimators.cpp" />
+		<Unit filename="src/GameEventDelegate.cpp" />
+		<Unit filename="src/GameImage.cpp" />
+		<Unit filename="src/GameMessages.cpp" />
+		<Unit filename="src/GameScene.cpp" />
+		<Unit filename="src/GameSound.cpp" />
+		<Unit filename="src/GameSprite.cpp" />
+		<Unit filename="src/ImageActions.cpp" />
+		<Unit filename="src/MessageActions.cpp" />
+		<Unit filename="src/MoveActions.cpp" />
+		<Unit filename="src/SoundActions.cpp" />
+		<Unit filename="src/SpriteCollisions.cpp" />
+		<Unit filename="src/TestSpriteTransform.cpp" />
+		<Unit filename="src/TextActions.cpp" />
+		<Unit filename="src/initAnimationsSet.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
