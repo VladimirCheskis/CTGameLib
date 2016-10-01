@@ -28,3 +28,6 @@
 *.out
 *.app
 *.layout
+
+Work/
+SFML-2.3.2/
